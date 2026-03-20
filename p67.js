@@ -1,0 +1,9 @@
+function toCamelCase(str) {
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map((w,i) => i===0 ? w : w[0].toUpperCase()+w.slice(1))
+    .join("");
+}
+
+console.log(toCamelCase("hello world test"));
